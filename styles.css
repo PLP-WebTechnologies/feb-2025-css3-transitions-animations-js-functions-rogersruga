@@ -1,0 +1,40 @@
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* Style for the button */
+  #animateButton {
+    background-color: #3498db;
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  #animateButton:hover {
+    background-color: #2ecc71;
+    transform: scale(1.1);
+  }
+  
+  /* Animation for the button */
+  @keyframes moveButton {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(100px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .animate {
+    animation: moveButton 1s ease-in-out infinite;
+  }
+  
